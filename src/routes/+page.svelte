@@ -63,27 +63,34 @@
 	<Services />
 
 	<!-- --------------------PROJECTS-------------------- -->
-	<div class="projects">
-		{#each data.projects.slice(0, first) as project}
-			<li id={project.id}>
-				<div class="image-content">
-					<img src={project.mainImage.url} alt={project.mainImage.id} />
-				</div>
-				<div class="content">
-					<div class="author-section">
-						<!-- <img class="authorImg" src={post.publishedBy.picture} alt={post.publishedBy.id} />
-								<span class="author">{post.publishedBy.name}</span> -->
+	<section class="projects">
+		<h2>selected projects</h2>
+		<div class="projects">
+			{#each data.projects.slice(0, first) as project}
+				<li id={project.id}>
+					<div class="image-content">
+						<img src={project.mainImage.url} alt={project.mainImage.id} />
 					</div>
-					<a href={`/projects/${project.slug}`}>{project.title}</a>
-					<br />
-				</div>
-			</li>
-		{/each}
-	</div>
+					<div class="content">
+						<div class="author-section">
+							<!-- <img class="authorImg" src={post.publishedBy.picture} alt={post.publishedBy.id} />
+									<span class="author">{post.publishedBy.name}</span> -->
+						</div>
+						<a href={`/projects/${project.slug}`}>{project.title}</a>
+						<br />
+					</div>
+				</li>
+			{/each}
+		</div>
+	</section>
 </section>
 
 <style>
 	img {
 		max-width: 100%;
+	}
+
+	h2 {
+		text-align: center;
 	}
 </style>
