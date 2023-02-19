@@ -1,0 +1,43 @@
+html {
+    font-family: Helvetica;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: white;
+    background-color: #161616;
+}
+
+.app {
+    background-color: #b8b8b8;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin: 0;
+    position: relative;
+}
+
+h1 {
+    font-size: 4.3rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: all 500ms ease-in-out;
+    text-decoration: underline;
+}

@@ -1,7 +1,10 @@
-<script></script>
+<script>
+		/** @type {import('./$types').PageData} */
+		export let data;
+</script>
 
 <svelte:head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
 
 	<meta name="robots" content="index, follow" />
 
@@ -48,6 +51,27 @@
 
 <section>
     <h1>Projects page</h1>
+	<div class="projects">
+		{#each data.projects as project}
+			<li id={project.id}>
+				<div class="image-content">
+					<img src={project.mainImage.url} alt={project.mainImage.id} />
+				</div>
+				<div class="content">
+					<div class="author-section">
+						<!-- <img class="authorImg" src={post.publishedBy.picture} alt={post.publishedBy.id} />
+								<span class="author">{post.publishedBy.name}</span> -->
+					</div>
+					<a href={`/projects/${project.slug}`}>{project.title}</a>
+					<br />
+				</div>
+			</li>
+		{/each}
+	</div>
 </section>
 
-<style></style>
+<style>
+	img {
+		max-width: 100%;
+	}
+</style>

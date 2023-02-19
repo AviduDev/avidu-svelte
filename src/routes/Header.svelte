@@ -2,10 +2,9 @@
 	import { page } from '$app/stores';
 </script>
 
-<header>
-
-	<nav>
-		<ul>
+<header class="header">
+	<nav class="nav">
+		<ul class="ul">
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>
@@ -23,9 +22,12 @@
 			</li>
 		</ul>
 	</nav>
-
 </header>
 
 <style>
-	
+	.nav {
+		position: fixed;
+		right: 1rem;
+		bottom: 5rem;
+	}
 </style>

@@ -1,8 +1,14 @@
-<script></script>
+<script>
+	import Hero from './Hero.svelte';
+	import Description from './Description.svelte';
+	import Services from './Services.svelte';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+	let first = 3;
+</script>
 
 <svelte:head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 	<meta name="robots" content="index, follow" />
 
 	<title>Website Designer and Frontend Developer from Sri Lanka</title>
@@ -47,7 +53,37 @@
 </svelte:head>
 
 <section>
-	<h1>Welcome to Sve lteKit</h1>
+	<!-- --------------------HERO-------------------- -->
+	<Hero />
+
+	<!-- --------------------DESCRIPTION-------------------- -->
+	<Description />
+
+	<!-- --------------------DESCRIPTION-------------------- -->
+	<Services />
+
+	<!-- --------------------PROJECTS-------------------- -->
+	<div class="projects">
+		{#each data.projects.slice(0, first) as project}
+			<li id={project.id}>
+				<div class="image-content">
+					<img src={project.mainImage.url} alt={project.mainImage.id} />
+				</div>
+				<div class="content">
+					<div class="author-section">
+						<!-- <img class="authorImg" src={post.publishedBy.picture} alt={post.publishedBy.id} />
+								<span class="author">{post.publishedBy.name}</span> -->
+					</div>
+					<a href={`/projects/${project.slug}`}>{project.title}</a>
+					<br />
+				</div>
+			</li>
+		{/each}
+	</div>
 </section>
 
-<style></style>
+<style>
+	img {
+		max-width: 100%;
+	}
+</style>
