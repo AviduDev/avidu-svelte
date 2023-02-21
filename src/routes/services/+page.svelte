@@ -1,7 +1,9 @@
-<script></script>
+<script>
+	/** @type {import('./$types').PageData} */
+	export let data;
+</script>
 
 <svelte:head>
-
 	<meta name="robots" content="index, follow" />
 
 	<title>Website Designer and Frontend Developer from Sri Lanka</title>
@@ -46,7 +48,41 @@
 </svelte:head>
 
 <section>
-    <h1>Services page</h1>
+	<h1>Services</h1>
+	<ul class="service">
+		{#each data.services as service}
+			<li id={service.id}>
+				<h2 class="title">{service.serviceTitle}</h2>
+				<div class="content">
+					<p class="except">{service.serviceDescription}</p>
+					<a class="learnMore" href={`/services/${service.slug}`}>Learn More</a>
+				</div>
+			</li>
+		{/each}
+	</ul>
+	<hr class="line" />
 </section>
 
-<style></style>
+<style>
+	h1 {
+		text-align: center;
+	}
+
+	.line {
+	}
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.except {
+		max-width: 70%;
+		text-align: justify;
+	}
+
+	.learnMore {
+		text-align: end;
+		align-self: flex-end;
+	}
+</style>

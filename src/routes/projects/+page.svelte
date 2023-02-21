@@ -1,11 +1,10 @@
 <script>
-		/** @type {import('./$types').PageData} */
-		export let data;
+	/** @type {import('./$types').PageData} */
+	export let data;
+	let first = 3
 </script>
 
 <svelte:head>
-	
-
 	<meta name="robots" content="index, follow" />
 
 	<title>Website Designer and Frontend Developer from Sri Lanka</title>
@@ -50,28 +49,50 @@
 </svelte:head>
 
 <section>
-    <h1>Projects page</h1>
+	<h1>Projects</h1>
 	<div class="projects">
-		{#each data.projects as project}
+		{#each data.projects.slice(0, first) as project}
 			<li id={project.id}>
-				<div class="image-content">
-					<img src={project.mainImage.url} alt={project.mainImage.id} />
+				<div class="imageContainer">
+					<img src={project.mainImage.url} width={project.mainImage.width} alt={project.title} />
 				</div>
 				<div class="content">
-					<div class="author-section">
-						<!-- <img class="authorImg" src={post.publishedBy.picture} alt={post.publishedBy.id} />
-								<span class="author">{post.publishedBy.name}</span> -->
-					</div>
 					<a href={`/projects/${project.slug}`}>{project.title}</a>
-					<br />
 				</div>
 			</li>
 		{/each}
+		<div>
+			{#if first < data.projects.length}
+				<div class="btn">
+					<button on:click={() => (first = first + 3)} class="loadMore" type="button">
+						More Projects
+					</button>
+				</div>
+			{/if}
+		</div>
 	</div>
 </section>
 
 <style>
+	h1 {
+		text-align: center;
+	}
 	img {
 		max-width: 100%;
+	}
+
+	button {
+		background: transparent;
+		border: none;
+		text-transform: uppercase;
+	}
+
+	button:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	li {
+		list-style: none;
 	}
 </style>

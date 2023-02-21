@@ -10,23 +10,17 @@ export const load = async () => {
 		}
 	})
 
-	const { projects } = await hygraph.request(
+	const { faqs } = await hygraph.request(
 		`query MyQuery {
-            projects {
-              title
-              slug
-              id
-              mainImage {
-                url
-				width
-				height
-              }
+            faqs {
+              question
+              answer
             }
           }
           `
 	)
 
 	return {
-		projects
+		faqs
 	}
 }

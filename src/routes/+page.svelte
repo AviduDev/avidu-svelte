@@ -2,6 +2,8 @@
 	import Hero from './Hero.svelte';
 	import Description from './Description.svelte';
 	import Services from './Services.svelte';
+	import Process from './Process.svelte';
+	import Contact from './Contact.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -82,7 +84,18 @@
 				</li>
 			{/each}
 		</div>
+
+		<div class="projectDes">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, architecto!</p>
+			<a href="/projects">all projects</a>
+		</div>
 	</section>
+
+	<!-- --------------------PROCESS-------------------- -->
+	<Process />
+
+	<!-- --------------------CONTACT-------------------- -->
+	<Contact />
 </section>
 
 <style>
@@ -92,5 +105,11 @@
 
 	h2 {
 		text-align: center;
+	}
+
+	.projectDes {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 </style>

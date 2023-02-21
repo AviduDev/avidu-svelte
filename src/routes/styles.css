@@ -27,12 +27,17 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
 h1, h2, h3, h4, p, a {
     margin: 0;
     padding: 0;
 }
 
 a {
+    text-transform: uppercase;
     color: inherit;
     text-decoration: none;
 }

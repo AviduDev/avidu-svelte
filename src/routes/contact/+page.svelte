@@ -1,8 +1,11 @@
-<script></script>
+<script>
+	import Contact from '../Contact.svelte';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+</script>
 
 <svelte:head>
-	
-
 	<meta name="robots" content="index, follow" />
 
 	<title>Website Designer and Frontend Developer from Sri Lanka</title>
@@ -47,7 +50,34 @@
 </svelte:head>
 
 <section>
-    <h1>Contact page</h1>
+	<h1>Contact</h1>
+	<h3 class="healine">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius impedit voluptas minima provident
+		repellat nobis, quibusdam, fuga accusamus dicta illum, amet adipisci quam quis harum.
+	</h3>
+
+	<ol class="faqs">
+		{#each data.faqs as faq}
+			 <li>
+				<h4>{faq.question}</h4>
+				<p>{faq.answer}</p>
+			 </li>
+			 <hr>
+		{/each}
+	</ol>
+
+	<Contact />
 </section>
 
-<style></style>
+<style>
+	h1 {
+		text-align: center;
+	}
+
+	.healine {
+		text-align: end;
+	}
+	hr {
+		border: solid 1px black;
+	}
+</style>
