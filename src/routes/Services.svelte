@@ -1,4 +1,7 @@
-<script></script>
+<script>
+    	/** @type {import('./$types').PageData} */
+	export let data;
+</script>
 
 <section class="section">
     <h2>services</h2>
@@ -24,6 +27,7 @@
 
 <style>
     .section {
+        margin: 4rem 0 4rem 0;
         width: 100%;
         border-radius: 0.5rem;
         background-color: #bbdef0;

@@ -14,7 +14,17 @@
 </section>
 
 <style>
+
+    section {
+        margin: 2rem 0 2rem 0;
+    }
+    .description {
+        max-width: 80%;
+        text-align: justify;
+    }
+
     .location {
+        margin: 1rem 0 1rem 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
