@@ -24,7 +24,20 @@ export const load = async () => {
           `
 	)
 
+	const { services } = await hygraph.request(
+		`query MyQuery {
+            services {
+              serviceTitle
+              serviceDescription
+              slug
+              id
+            }
+          }
+          `
+	)
+
 	return {
-		projects
+		projects,
+		services
 	}
 }

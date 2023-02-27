@@ -19,6 +19,7 @@ html {
 }
 
 h1 {
+    font-weight: 900;
     font-size: 4.3rem;
     text-transform: uppercase;
 }

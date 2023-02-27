@@ -1,7 +1,6 @@
 <script>
 	import Hero from './Hero.svelte';
 	import Description from './Description.svelte';
-	import Services from './Services.svelte';
 	import Process from './Process.svelte';
 	import Contact from './Contact.svelte';
 
@@ -61,13 +60,22 @@
 	<!-- --------------------DESCRIPTION-------------------- -->
 	<Description />
 
-	<!-- --------------------DESCRIPTION-------------------- -->
-	<Services />
+	<!-- --------------------SERVICES-------------------- -->
+	<ul class="services">
+		{#each data.services as service}
+			<li class="serviceItem" id={service.id}>
+				<h3 class="serviceTitle">
+					<a class="serviceLink" href={`/services/${service.slug}`}>{service.serviceTitle}</a>
+				</h3>
+			</li>
+			<hr />
+		{/each}
+	</ul>
 
 	<!-- --------------------PROJECTS-------------------- -->
 	<section class="projects">
 		<h2>selected projects</h2>
-		<div class="projects">
+		<ul class="projects">
 			{#each data.projects.slice(0, first) as project}
 				<li id={project.id}>
 					<div class="image-content">
@@ -83,10 +91,14 @@
 					</div>
 				</li>
 			{/each}
-		</div>
+		</ul>
 
 		<div class="projectDes">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, architecto!</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic perspiciatis maxime,
+				alias adipisci enim similique officia fugit et error dolore neque aperiam repudiandae
+				possimus!
+			</p>
 			<a href="/projects">all projects</a>
 		</div>
 	</section>
@@ -111,5 +123,40 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: end;
+	}
+
+	.projectDes p {
+		text-align: justify;
+		max-width: 70%;
+	}
+
+	.projectDes a {
+		
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	hr {
+		width: 100%;
+		border: solid 1px black;
+	}
+
+	.serviceTitle {
+		font-size: 2.5rem;
+	}
+
+	.services {
+		width: 100%;
+	}
+
+	.serviceItem {
+		width: 100%;
+	}
+
+	.services {
+		margin: 4rem 0 4rem 0;
 	}
 </style>
