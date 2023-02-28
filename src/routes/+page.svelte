@@ -3,6 +3,7 @@
 	import Description from './Description.svelte';
 	import Process from './Process.svelte';
 	import Contact from './Contact.svelte';
+	import Notice from './Notice.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -54,6 +55,7 @@
 </svelte:head>
 
 <section>
+	<Notice />
 	<!-- --------------------HERO-------------------- -->
 	<Hero />
 
