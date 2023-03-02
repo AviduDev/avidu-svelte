@@ -70,7 +70,8 @@
 					<a class="serviceLink" href={`/services/${service.slug}`}>{service.serviceTitle}</a>
 				</h3>
 			</li>
-			<hr />
+			<!-- <hr /> -->
+			<div class="line"></div>
 		{/each}
 	</ul>
 
@@ -160,5 +161,15 @@
 
 	.services {
 		margin: 4rem 0 4rem 0;
+	}
+
+	.line {
+		width: 100%;
+		background-color: #000000;
+		height: 0.3rem;
+	}
+
+	.serviceLink:hover ~ .line {
+		height: 10px;
 	}
 </style>

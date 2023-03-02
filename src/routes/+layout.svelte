@@ -19,17 +19,18 @@
 	.app {
 		display: flex;
 		flex-direction: column;
-		min-height: 100vh;
+		max-width: 100vw;
+		position: relative;
+		background-color: #b8b8b8;
+		overflow: hidden;
+		border-radius: 0.5rem;
+		padding: 0.5rem;
+		position: relative;
 	}
 
 	main {
-		flex: 1;
+		position: relative;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
 	}
 </style>

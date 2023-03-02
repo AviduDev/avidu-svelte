@@ -4,7 +4,7 @@
 
 <style>
     section {
-        width: 100%;
+        width: fit-content;
         background-color: #f3ff83;
         padding: 1rem;
         border-radius: 0.3rem;
