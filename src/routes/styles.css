@@ -2,7 +2,7 @@ html {
     font-family: Helvetica;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     box-sizing: border-box;
     position: relative;
 }

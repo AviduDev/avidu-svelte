@@ -17,6 +17,7 @@
 
 <style>
     .section {
+        padding: 2rem 0 2rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,6 +33,16 @@
     }
 
     .emailLink {
+        padding: 2rem 0 2rem 0;
         font-size: 2.5rem;
+    }
+
+    .linkContainer a {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+    .links {
+        width: 100%;
+        justify-content: space-between;
     }
 </style>

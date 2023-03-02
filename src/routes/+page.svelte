@@ -76,21 +76,16 @@
 	</ul>
 
 	<!-- --------------------PROJECTS-------------------- -->
-	<section class="projects">
+	<section class="projectContainer">
 		<h2>selected projects</h2>
 		<ul class="projects">
 			{#each data.projects.slice(0, first) as project}
-				<li id={project.id}>
+				<li class="projectItem" id={project.id}>
 					<div class="image-content">
 						<img src={project.mainImage.url} alt={project.mainImage.id} />
 					</div>
 					<div class="content">
-						<div class="author-section">
-							<!-- <img class="authorImg" src={post.publishedBy.picture} alt={post.publishedBy.id} />
-									<span class="author">{post.publishedBy.name}</span> -->
-						</div>
-						<a href={`/projects/${project.slug}`}>{project.title}</a>
-						<br />
+						<a href={`/projects/${project.slug}`}><h3>{project.title}</h3></a>
 					</div>
 				</li>
 			{/each}
@@ -123,22 +118,33 @@
 	}
 
 	.projectDes {
+		width: 90%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: end;
+		margin: 2rem;
 	}
 
 	.projectDes p {
 		text-align: justify;
+		align-self: flex-start;
 		max-width: 70%;
 	}
 
+	.projectItem {
+		margin: 1rem;
+	}
 	.projectDes a {
-		
+		align-self: flex-end;
+		text-align: end;
 	}
 
 	ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		list-style: none;
 	}
 
@@ -152,11 +158,16 @@
 	}
 
 	.services {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 	}
 
 	.serviceItem {
 		width: 100%;
+		margin: 1rem;
 	}
 
 	.services {

@@ -26,8 +26,23 @@
 
 <style>
 	.nav {
+		border: solid black 2px;
+		background-color: #b8b8b8;
 		position: fixed;
 		right: 1rem;
 		bottom: 5rem;
+		z-index: 10;
+		border-radius: 0.5rem;
+	}
+
+	.nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* list-style: none; */
+	}
+
+	li {
+		margin: 0.2rem;
 	}
 </style>

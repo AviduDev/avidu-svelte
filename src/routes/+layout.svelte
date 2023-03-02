@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>Website by Myself</p>
+		<p>AVIDU©2023</p>
 	</footer>
 </div>
 
@@ -26,11 +26,22 @@
 		border-radius: 0.5rem;
 		padding: 0.5rem;
 		position: relative;
+		justify-content: center;
+		align-items: center;
 	}
 
 	main {
 		position: relative;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer p {
+		/* margin: 2rem 0 2rem 0; */
+		font-weight: bolder;
+		font-size: 5rem;
+		text-align: center;
 	}
 </style>
