@@ -55,7 +55,7 @@
 </svelte:head>
 
 <section>
-	<Notice />
+	<!-- <Notice /> -->
 	<!-- --------------------HERO-------------------- -->
 	<Hero />
 
@@ -78,18 +78,24 @@
 	<!-- --------------------PROJECTS-------------------- -->
 	<section class="projectContainer">
 		<h2>selected projects</h2>
-		<ul class="projects">
+		<div class="projects">
 			{#each data.projects.slice(0, first) as project}
-				<li class="projectItem" id={project.id}>
-					<div class="image-content">
-						<img src={project.mainImage.url} alt={project.mainImage.id} />
-					</div>
-					<div class="content">
-						<a href={`/projects/${project.slug}`}><h3>{project.title}</h3></a>
-					</div>
-				</li>
-			{/each}
-		</ul>
+			<div class="project" id={project.id}>
+				<div class="imageContainer">
+					<img src={project.mainImage.url} width={project.mainImage.width} alt={project.title} />
+				</div>
+				<div class="details">
+					{#each project.tags as tag}
+						<p class="projectTag">{tag}</p>
+					{/each}
+					<p class="year projectTag">{project.year}</p>
+				</div>
+				<div class="content">
+					<a href={`/projects/${project.slug}`}><h2 class="projectTitle">{project.title}</h2></a>
+				</div>
+			</div>
+		{/each}
+		</div>
 
 		<div class="projectDes">
 			<p>
@@ -109,6 +115,13 @@
 </section>
 
 <style>
+
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	img {
 		max-width: 100%;
 	}
@@ -117,6 +130,30 @@
 		text-align: center;
 	}
 
+	/* -------------------------------PROJECTS--------------------------------- */
+
+	.projectTitle {
+		text-align: start;
+		font-size: 1.3rem;
+	}
+
+	.project {
+		margin: 2rem 0 2rem 0;
+	}
+
+	.details {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.projectTag {
+		background-color: black;
+		color: #b9b9b9;
+		padding: 0.3rem;
+		border-radius: 0.3rem;
+		margin: 0.5rem 0 0.5rem 0;
+	}
 	.projectDes {
 		width: 90%;
 		display: flex;
@@ -132,25 +169,20 @@
 		max-width: 70%;
 	}
 
-	.projectItem {
-		margin: 1rem;
-	}
 	.projectDes a {
 		align-self: flex-end;
 		text-align: end;
 	}
 
+	/* ---------------------------------------------------------------------- */
+
+	/* --------------------------------------SERVICES------------------------- */
 	ul {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		list-style: none;
-	}
-
-	hr {
-		width: 100%;
-		border: solid 1px black;
 	}
 
 	.serviceTitle {
@@ -166,6 +198,11 @@
 	}
 
 	.serviceItem {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		text-align: start;
 		width: 100%;
 		margin: 1rem;
 	}
@@ -183,4 +220,6 @@
 	.serviceLink:hover ~ .line {
 		height: 10px;
 	}
+
+	/* ------------------------------------------------------------------- */
 </style>

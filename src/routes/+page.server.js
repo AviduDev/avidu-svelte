@@ -15,6 +15,8 @@ export const load = async () => {
             projects {
               title
               slug
+              tags
+              year
               id
               mainImage {
                 url

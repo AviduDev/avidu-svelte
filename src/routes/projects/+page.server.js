@@ -16,6 +16,8 @@ export const load = async () => {
               title
               slug
               id
+			  tags
+			  year
               mainImage {
                 url
 				width

@@ -4,27 +4,28 @@
 
 <header class="header">
 	<nav class="nav">
-		<ul class="ul">
-			<!-- <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+		<!-- <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li> -->
-			<li aria-current={$page.url.pathname.startsWith('/projects') ? 'page' : undefined}>
-				<a href="/projects">Projects</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/services') ? 'page' : undefined}>
-				<a href="/services">Services</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined}>
-				<a href="/contact">Contact</a>
-			</li>
-		</ul>
+		<a class="link" href="/">Home</a>
+
+		<a class="link" href="/projects">Projects</a>
+
+		<a class="link" href="/services">Services</a>
+
+		<a class="link" href="/about">About</a>
+
+		<a class="link" href="/contact">Contact</a>
 	</nav>
 </header>
 
 <style>
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	.nav {
 		border: solid black 2px;
 		background-color: #b8b8b8;
@@ -33,23 +34,16 @@
 		bottom: 1rem;
 		z-index: 10;
 		border-radius: 0.5rem;
-		max-width: 100%;
-	}
-
-	.nav ul {
+		min-width: 90%;
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 		justify-content: space-between;
-		align-items: center;
-		list-style: none;
-		text-align: center;
+		padding: 1rem 0.5rem 1rem 0.5rem;
+		
 	}
 
-	li {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		/* margin: 0.2rem; */
+	.link {
+		font-size: 0.9rem;
 	}
 </style>

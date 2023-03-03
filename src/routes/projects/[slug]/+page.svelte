@@ -4,13 +4,17 @@
 </script>
 
 <div class="project">
-	<h1>{data.project.title}</h1>
 	<img src={data.project.mainImage.url} alt={data.project.mainImage.id} />
 	<!-- <div class="wrapper">{@html data.post.content.text}</div> -->
+	<h1 class="projectTitle">{data.project.title}</h1>
 </div>
 <section />
 
 <style>
+
+	.projectTitle {
+		font-size: 2rem;
+	}
     img {
         max-width: 100%;
     }

@@ -92,6 +92,6 @@
 		color: #b8b8b8;
 		max-width: 70%;
 		text-align: justify;
-		align-self: flex-end;
+		align-self: flex-start;
 	}
 </style>

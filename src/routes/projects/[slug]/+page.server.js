@@ -22,6 +22,33 @@ export const load = async ({ params }) => {
                 url
                 id
               }
+			  company
+			  collaboration
+			  demoUrl
+			  description
+			  design
+			  galleryImages {
+				html
+			  }
+			  goals {
+				html
+			  }
+			  liveSite
+			  problems {
+				html
+			  }
+			  projectScope {
+				html
+			  }
+			  proposedSolution {
+				html
+			  }
+			  providedServices {
+				html
+			  }
+			  sourceUrl
+			  tags
+			  year
             }
         }`,
 		{

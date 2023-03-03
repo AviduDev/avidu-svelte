@@ -33,8 +33,8 @@
     }
 
     .emailLink {
-        padding: 2rem 0 2rem 0;
-        font-size: 2.5rem;
+        padding: 2rem 1rem 2rem 1rem;
+        font-size: 2rem;
     }
 
     .linkContainer a {
@@ -42,7 +42,7 @@
     }
 
     .links {
-        width: 100%;
+        min-width: 100%;
         justify-content: space-between;
     }
 </style>

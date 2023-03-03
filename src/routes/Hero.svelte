@@ -14,7 +14,13 @@
 </section>
 
 <style>
+
+    h1 {
+        word-wrap: break-word;
+        font-size: 4rem;
+    }
     .heroSection {
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         min-height: 97vh;

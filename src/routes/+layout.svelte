@@ -11,24 +11,26 @@
 	</main>
 
 	<footer>
-		<p>AVIDU©2023</p>
+		<p>AVIDU<br>©2023</p>
 	</footer>
 </div>
 
 <style>
 	.app {
 		max-width: 100vw;
-		padding: 1rem;
+		padding: 0.5rem;
 		background-color: #b9b9b9;
 		overflow: hidden;
 		justify-content: center;
 		align-items: center;
+		border-radius: 0.5rem;
 	}
 
 	main {
 	}
 
 	footer p {
+		word-break: break-all;
 		/* margin: 2rem 0 2rem 0; */
 		font-weight: bolder;
 		font-size: 5rem;

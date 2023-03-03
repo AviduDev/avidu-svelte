@@ -1,7 +1,9 @@
 <script>
+	import { each } from 'svelte/internal';
+
 	/** @type {import('./$types').PageData} */
 	export let data;
-	let first = 3
+	let first = 3;
 </script>
 
 <svelte:head>
@@ -49,36 +51,62 @@
 </svelte:head>
 
 <section>
-	<h1>Projects</h1>
+	<h1 class="mainTitle">Projects</h1>
 	<div class="projects">
 		{#each data.projects.slice(0, first) as project}
-			<li id={project.id}>
+			<div class="project" id={project.id}>
 				<div class="imageContainer">
 					<img src={project.mainImage.url} width={project.mainImage.width} alt={project.title} />
 				</div>
-				<div class="content">
-					<a href={`/projects/${project.slug}`}>{project.title}</a>
+				<div class="details">
+					{#each project.tags as tag}
+						<p class="projectTag">{tag}</p>
+					{/each}
+					<p class="year projectTag">{project.year}</p>
 				</div>
-			</li>
+				<div class="content">
+					<a href={`/projects/${project.slug}`}><h2 class="projectTitle">{project.title}</h2></a>
+				</div>
+			</div>
 		{/each}
-		<div>
+
+		<!-- -------------------LOADMORE BUTTON-------------------- -->
+
+		<div class="loadmoreContainer">
 			{#if first < data.projects.length}
 				<div class="btn">
 					<button on:click={() => (first = first + 3)} class="loadMore" type="button">
-						More Projects
+						Load More Projects 🡦
 					</button>
 				</div>
 			{/if}
 		</div>
+
+		<!-- ----------------------------------------------------------- -->
 	</div>
 </section>
 
 <style>
-	h1 {
+	.mainTitle {
+		margin: 2rem 0 2rem 0;
 		text-align: center;
+		font-size: 3.5rem;
 	}
 	img {
 		max-width: 100%;
+	}
+
+	.loadmoreContainer {
+		min-width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.loadMore {
+		font-weight: bold;
+		cursor: pointer;
+		text-decoration: underline;
 	}
 
 	button {
@@ -92,7 +120,25 @@
 		text-decoration: underline;
 	}
 
-	li {
-		list-style: none;
+	.projectTitle {
+		font-size: 1.3rem;
+	}
+
+	.project {
+		margin: 2rem 0 2rem 0;
+	}
+
+	.details {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.projectTag {
+		background-color: black;
+		color: #b9b9b9;
+		padding: 0.3rem;
+		border-radius: 0.3rem;
+		margin: 0.5rem 0 0.5rem 0;
 	}
 </style>
