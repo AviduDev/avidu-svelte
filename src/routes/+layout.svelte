@@ -17,25 +17,15 @@
 
 <style>
 	.app {
-		display: flex;
-		flex-direction: column;
 		max-width: 100vw;
-		position: relative;
-		background-color: #b8b8b8;
-		overflow: hidden;
-		border-radius: 0.5rem;
 		padding: 1rem;
-		position: relative;
+		background-color: #b9b9b9;
+		overflow: hidden;
 		justify-content: center;
 		align-items: center;
 	}
 
 	main {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 	}
 
 	footer p {
