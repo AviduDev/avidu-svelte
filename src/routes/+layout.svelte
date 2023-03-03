@@ -24,7 +24,7 @@
 		background-color: #b8b8b8;
 		overflow: hidden;
 		border-radius: 0.5rem;
-		padding: 0.5rem;
+		padding: 1rem;
 		position: relative;
 		justify-content: center;
 		align-items: center;
