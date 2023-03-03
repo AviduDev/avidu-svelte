@@ -5,9 +5,9 @@
 <header class="header">
 	<nav class="nav">
 		<ul class="ul">
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+			<!-- <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
-			</li>
+			</li> -->
 			<li aria-current={$page.url.pathname.startsWith('/projects') ? 'page' : undefined}>
 				<a href="/projects">Projects</a>
 			</li>
@@ -29,20 +29,27 @@
 		border: solid black 2px;
 		background-color: #b8b8b8;
 		position: fixed;
-		right: 1rem;
-		bottom: 5rem;
+		/* right: 1rem; */
+		bottom: 1rem;
 		z-index: 10;
 		border-radius: 0.5rem;
+		max-width: 100%;
 	}
 
 	.nav ul {
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		/* list-style: none; */
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+		text-align: center;
 	}
 
 	li {
-		margin: 0.2rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		/* margin: 0.2rem; */
 	}
 </style>
