@@ -31,7 +31,7 @@
 		background-color: #b8b8b8;
 		position: fixed;
 		/* right: 1rem; */
-		bottom: 1rem;
+		bottom: 0.3rem;
 		z-index: 10;
 		border-radius: 0.5rem;
 		min-width: 90%;

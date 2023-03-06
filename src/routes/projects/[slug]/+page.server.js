@@ -22,13 +22,21 @@ export const load = async ({ params }) => {
                 url
                 id
               }
+			  type
 			  company
 			  collaboration
 			  demoUrl
 			  description
 			  design
-			  galleryImages {
+			  sourceUrl
+			  tags
+			  year
+			  images {
 				html
+			  }
+			  gallery {
+				url
+				id
 			  }
 			  goals {
 				html
@@ -46,9 +54,7 @@ export const load = async ({ params }) => {
 			  providedServices {
 				html
 			  }
-			  sourceUrl
-			  tags
-			  year
+			
             }
         }`,
 		{
