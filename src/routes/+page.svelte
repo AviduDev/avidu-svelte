@@ -14,26 +14,28 @@
 	<meta name="robots" content="index, follow" />
 
 	<title>Website Designer and Frontend Developer from Sri Lanka</title>
-	<meta name="description" content="Avidu is a good website designer from sri lanka" />
-	<meta name="keywords" content="Web Design, Web Development, Frontend Development" />
-	<meta name="author" content="Avidu Sampath" />
+	<meta
+		name="description"
+		content="Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and const-effective websites using modern tech stacks"
+	/>
+	<meta name="keywords" content="Web Design, Web Development, Frontend Development, web designer sri lanka, web developer sri lanka wordpress, next.js, svelte, sveltekit" />
+	<meta name="author" content="Avidu" />
 
 	<meta property="og:type" content="website" />
 	<meta
 		property="og:image"
-		content="https://res.cloudinary.com/avidu/image/upload/v1672635670/1JxxrWlPeEgNUPLtiQbSG8eGiGea8ijJb_u8vibc.png"
+		content="https://res.cloudinary.com/avidu/image/upload/v1676927730/Avidu_Web-_Designer_and_Front_end_Developer_from_Sri_Lanka-WEB_zk9qoy.jpg"
 	/>
 	<meta property="og:title" content="Website Designer and Frontend Developer from Sri Lanka" />
-	<meta property="og:description" content="Avidu is a good website designer from sri lanka" />
+	<meta property="og:description" content="Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and const-effective websites using modern tech stacks" />
 	<meta name="og:url" content="https://avidu.me" />
 	<meta property="og:locale" content="es_ES" />
-	<meta property="og:url" content="https://avidu.me" />
 
 	<meta name="twitter:title" content="Website Designer and Frontend Developer from Sri Lanka" />
-	<meta name="twitter:description" content="Avidu is a good website designer from sri lanka" />
+	<meta name="twitter:description" content="Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and const-effective websites using modern tech stacks" />
 	<meta
 		name="twitter:image"
-		content="https://res.cloudinary.com/avidu/image/upload/v1672635670/1JxxrWlPeEgNUPLtiQbSG8eGiGea8ijJb_u8vibc.png"
+		content="https://res.cloudinary.com/avidu/image/upload/v1676927730/Avidu_Web-_Designer_and_Front_end_Developer_from_Sri_Lanka-WEB_zk9qoy.jpg"
 	/>
 	<meta name="twitter:domain" content="https://avidu.me" />
 	<meta name="twitter:card" content="summary_large_image" />
@@ -43,12 +45,12 @@
             "@context": "http://schema.org",
             "@type": "website",
               "name": "Website Designer and Frontend Developer from Sri Lanka",
-              "description": "Avidu is a good website designer from sri lanka",
-              "image": "https://res.cloudinary.com/avidu/image/upload/v1672635670/1JxxrWlPeEgNUPLtiQbSG8eGiGea8ijJb_u8vibc.png"
+              "description": "Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and const-effective websites using modern tech stacks",
+              "image": "https://res.cloudinary.com/avidu/image/upload/v1676927730/Avidu_Web-_Designer_and_Front_end_Developer_from_Sri_Lanka-WEB_zk9qoy.jpg"
               "url": "https://avidu.me",
               "author" : {
                 "@type" : "Person",
-                "name" : "Avidu Sampath"
+                "name" : "Avidu"
             },
             }
     </script>`}
@@ -71,7 +73,7 @@
 				</h3>
 			</li>
 			<!-- <hr /> -->
-			<div class="line"></div>
+			<div class="line" />
 		{/each}
 	</ul>
 
@@ -80,21 +82,21 @@
 		<h2>selected projects</h2>
 		<div class="projects">
 			{#each data.projects.slice(0, first) as project}
-			<div class="project" id={project.id}>
-				<div class="imageContainer">
-					<img src={project.mainImage.url} width={project.mainImage.width} alt={project.title} />
+				<div class="project" id={project.id}>
+					<div class="imageContainer">
+						<img src={project.mainImage.url} width={project.mainImage.width} alt={project.title} />
+					</div>
+					<div class="details">
+						{#each project.tags as tag}
+							<p class="projectTag">{tag}</p>
+						{/each}
+						<p class="year projectTag">{project.year}</p>
+					</div>
+					<div class="content">
+						<a href={`/projects/${project.slug}`}><h2 class="projectTitle">{project.title}</h2></a>
+					</div>
 				</div>
-				<div class="details">
-					{#each project.tags as tag}
-						<p class="projectTag">{tag}</p>
-					{/each}
-					<p class="year projectTag">{project.year}</p>
-				</div>
-				<div class="content">
-					<a href={`/projects/${project.slug}`}><h2 class="projectTitle">{project.title}</h2></a>
-				</div>
-			</div>
-		{/each}
+			{/each}
 		</div>
 
 		<div class="projectDes">
@@ -115,7 +117,6 @@
 </section>
 
 <style>
-
 	section {
 		display: flex;
 		flex-direction: column;
