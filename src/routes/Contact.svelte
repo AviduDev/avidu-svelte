@@ -24,6 +24,7 @@
         color: #FEE715;
         border-radius: 0.5rem;
         background-color: #000000;
+        min-width: 100%;
     }
 
     .linkContainer {
@@ -34,7 +35,7 @@
 
     .emailLink {
         padding: 2rem 1rem 2rem 1rem;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .linkContainer a {

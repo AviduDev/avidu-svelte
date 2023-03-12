@@ -73,11 +73,11 @@
 
 	<ol class="faqs">
 		{#each data.faqs as faq}
-			<li>
+			<li class="faq">
 				<h4 itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 					{faq.question}
 				</h4>
-				<p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">{faq.answer}</p>
+				<p class="answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">{faq.answer}</p>
 			</li>
 			<hr />
 		{/each}
@@ -92,9 +92,18 @@
 	}
 
 	.healine {
-		text-align: end;
+		text-align: justify;
+		margin: 1rem 0 2rem 0;
 	}
 	hr {
 		border: solid 1px black;
+	}
+
+	.faq {
+		margin: 2rem 0 0 0;
+	}
+
+	.answer {
+		margin: 1rem 0 0 0;
 	}
 </style>

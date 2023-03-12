@@ -63,7 +63,7 @@
 
 <section itemscope itemtype="https://schema.org/Person">
 	<h1>About me</h1>
-	<h3 itemprop="description">
+	<h3 class="dsc" itemprop="description">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis debitis in facere, autem
 		distinctio pariatur? Veritatis labore ab provident inventore tenetur placeat quod, culpa
 		quisquam quo quibusdam repellendus doloremque adipisci!
@@ -95,28 +95,28 @@
 				</li>
 			</ul>
 
-			<h2>education</h2>
+			<h2 class="title">education</h2>
 			<hr />
 
 			<div>
 				{@html bio.education.html}
 			</div>
 
-			<h2>experience</h2>
+			<h2 class="title">experience</h2>
 			<hr />
 
 			<div>
 				{@html bio.experience.html}
 			</div>
 
-			<h2>vision</h2>
+			<h2 class="title">vision</h2>
 			<hr />
 
 			<div>
 				{@html bio.vision.html}
 			</div>
 
-			<h2>values</h2>
+			<h2 class="title">values</h2>
 			<hr />
 
 			<div>
@@ -129,6 +129,10 @@
 <style>
 	hr {
 		border: solid 1px black;
+	}
+
+	.dsc {
+		margin: 2rem 0 2rem 0;
 	}
 	.imageContainer {
 		max-width: 100%;
@@ -144,5 +148,14 @@
 	}
 	h1 {
 		text-align: center;
+	}
+
+	li {
+		list-style: none;
+		margin: 1rem 0 1rem 0;
+	}
+
+	.title {
+		margin: 4rem 0 2rem 0;
 	}
 </style>

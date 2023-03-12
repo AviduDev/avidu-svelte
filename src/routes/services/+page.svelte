@@ -49,7 +49,7 @@
 
 <section>
 	<h1>Services</h1>
-	<ul class="service">
+	<div class="service">
 		{#each data.services as service}
 			<li id={service.id}>
 				<h2 class="title">{service.serviceTitle}</h2>
@@ -57,10 +57,11 @@
 					<p class="except">{service.serviceDescription}</p>
 					<a class="learnMore" href={`/services/${service.slug}`}>Learn More</a>
 				</div>
+				<hr class="line" />
 			</li>
 		{/each}
-	</ul>
-	<hr class="line" />
+	</div>
+	
 </section>
 
 <style>
@@ -68,21 +69,39 @@
 		text-align: center;
 	}
 
+	h2 {
+		word-wrap: break-word;
+	}
+
+	li {
+		list-style: none;
+	}
+
 	.line {
+		border: solid black 1px;
+	}
+
+	.title {
+		margin: 4rem 0 2rem 0;
+	}
+
+	.learnMore {
+		margin: 1rem 0 1rem 0;
 	}
 
 	.content {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
 	}
 	.except {
-		max-width: 70%;
+		max-width: 80%;
 		text-align: justify;
 	}
 
 	.learnMore {
 		text-align: end;
 		align-self: flex-end;
+		text-decoration: underline;
 	}
 </style>

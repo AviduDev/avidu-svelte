@@ -16,7 +16,7 @@
 	<title>Website Designer and Frontend Developer from Sri Lanka</title>
 	<meta
 		name="description"
-		content="Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and const-effective websites using modern tech stacks"
+		content="Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and cost-effective websites using modern tech stacks"
 	/>
 	<meta name="keywords" content="Web Design, Web Development, Frontend Development, web designer sri lanka, web developer sri lanka wordpress, next.js, svelte, sveltekit" />
 	<meta name="author" content="Avidu" />

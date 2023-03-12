@@ -107,6 +107,10 @@
 		font-weight: bold;
 		cursor: pointer;
 		text-decoration: underline;
+		-webkit-appearance: none;
+    	-webkit-border-radius: 0;
+		border-radius: 0;
+		appearance: none;
 	}
 
 	button {
