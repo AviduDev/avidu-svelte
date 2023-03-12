@@ -2,66 +2,81 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
   <loc>http://avidu.me/</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
   <loc>http://avidu.me/projects</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
   <loc>http://avidu.me/services</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
   <loc>http://avidu.me/about</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
   <loc>http://avidu.me/contact</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
-  <loc>http://avidu.me/services#web</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <loc>http://avidu.me/services/website-design</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
-  <loc>http://avidu.me/projects/web-design-and-development-and-branding-for-okkom-co</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <loc>http://avidu.me/services/website-development</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
-  <loc>http://avidu.me/projects/web-design-and-development-and-branding-for-motivated-clothing</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <loc>http://avidu.me/services/designs</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
-  <loc>http://avidu.me/projects/web-design-and-development-and-branding-for-damn-domains</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <loc>http://avidu.me/services/other-services</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
-  <loc>http://avidu.me/projects/web-design-and-development-and-branding-for-seed-store</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <loc>http://avidu.me/projects/website-for-okkoma-co</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
-  <loc></loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <loc>http://avidu.me/projects/website-for-motivated-clothing</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
-  <loc>http://avidu.me/cdn-cgi/l/email-protection#95f4e3fcf1e0aca2d5f2f8f4fcf9bbf6faf8</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <loc>http://avidu.me/projects/website-for-damn-domains</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
+</url>
+<url>
+  <loc>http://avidu.me/cdn-cgi/l/email-protection#0b6a7d626f7e323c4b6c666a62672568646634787e69616e687f36422b456e6e6f2b6a2b5c6e6978627f6e</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>
 <url>
   <loc>http://avidu.me/tel:+94767578127</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2023-02-18</lastmod>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
+</url>
+<url>
+  <loc>http://avidu.me/cdn-cgi/l/email-protection#711007181504484631161c10181d5f121e1c4e0204131b1412054c38513f14141551105126141302180514</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
+</url>
+<url>
+  <loc>http://avidu.me/cdn-cgi/l/email-protection#81e0f7e8e5f4b8b6c1e6ece0e8edafe2eeecbef2f4e3ebe4e2f5bcc8a1cfe4e4e5a1e0a1d6e4e3f2e8f5e4</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2023-03-12</lastmod>
 </url>

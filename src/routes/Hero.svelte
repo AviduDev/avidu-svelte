@@ -38,4 +38,53 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    /* Small devices (landscape phones, 576px and up) */
+	@media (min-width: 576px) {
+        h1 {
+            font-size: 5rem;
+        }
+
+        .socialLinks {
+            font-size: 1.4rem;
+        }
+
+        .infos {
+            font-size: 1.4rem;
+        }
+	}
+
+	/* Medium devices (tablets, 768px and up) */
+	@media (min-width: 768px) {
+        h1 {
+            font-size: 7rem;
+        }
+
+        .socialLinks {
+            font-size: 1.6rem;
+        }
+
+        .infos {
+            font-size: 1.6rem;
+        }
+	}
+
+	/* Large devices (desktops, 992px and up) */
+	@media (min-width: 992px) {
+        h1 {
+            font-size: 8rem;
+        }
+
+        .socialLinks {
+            font-size: 1.6rem;
+        }
+
+        .infos {
+            font-size: 1.6rem;
+        }
+	}
+
+	/* Extra large devices (large desktops, 1200px and up) */
+	@media (min-width: 1200px) {
+	}
 </style>

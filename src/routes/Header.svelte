@@ -46,4 +46,11 @@
 	.link {
 		font-size: 0.9rem;
 	}
+
+	/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.link {
+		font-size: 1.3rem;
+	}
+}
 </style>

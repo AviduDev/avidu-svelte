@@ -26,14 +26,12 @@
 		border-radius: 0.5rem;
 	}
 
-	main {
-	}
 
 	footer p {
 		word-break: break-all;
 		/* margin: 2rem 0 2rem 0; */
 		font-weight: bolder;
-		font-size: 5rem;
+		font-size: 10rem;
 		text-align: center;
 	}
 </style>

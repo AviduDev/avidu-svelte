@@ -18,7 +18,10 @@
 		name="description"
 		content="Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and cost-effective websites using modern tech stacks"
 	/>
-	<meta name="keywords" content="Web Design, Web Development, Frontend Development, web designer sri lanka, web developer sri lanka wordpress, next.js, svelte, sveltekit" />
+	<meta
+		name="keywords"
+		content="Web Design, Web Development, Frontend Development, web designer sri lanka, web developer sri lanka wordpress, next.js, svelte, sveltekit"
+	/>
 	<meta name="author" content="Avidu" />
 
 	<meta property="og:type" content="website" />
@@ -27,12 +30,18 @@
 		content="https://res.cloudinary.com/avidu/image/upload/v1676927730/Avidu_Web-_Designer_and_Front_end_Developer_from_Sri_Lanka-WEB_zk9qoy.jpg"
 	/>
 	<meta property="og:title" content="Website Designer and Frontend Developer from Sri Lanka" />
-	<meta property="og:description" content="Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and const-effective websites using modern tech stacks" />
+	<meta
+		property="og:description"
+		content="Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and const-effective websites using modern tech stacks"
+	/>
 	<meta name="og:url" content="https://avidu.me" />
 	<meta property="og:locale" content="es_ES" />
 
 	<meta name="twitter:title" content="Website Designer and Frontend Developer from Sri Lanka" />
-	<meta name="twitter:description" content="Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and const-effective websites using modern tech stacks" />
+	<meta
+		name="twitter:description"
+		content="Avidu is a creative web developer and designer from sri lanka who builds modern, fast, and const-effective websites using modern tech stacks"
+	/>
 	<meta
 		name="twitter:image"
 		content="https://res.cloudinary.com/avidu/image/upload/v1676927730/Avidu_Web-_Designer_and_Front_end_Developer_from_Sri_Lanka-WEB_zk9qoy.jpg"
@@ -223,4 +232,79 @@
 	}
 
 	/* ------------------------------------------------------------------- */
+
+	/* Small devices (landscape phones, 576px and up) */
+	@media (min-width: 576px) {
+		h2 {
+			font-size: 4.5rem;
+		}
+
+		.serviceTitle {
+			font-size: 3rem;
+		}
+
+		.projectTitle {
+			font-size: 2.5rem;
+		}
+
+		.projectDes {
+			font-size: 1.4rem;
+		}
+	}
+
+	/* Medium devices (tablets, 768px and up) */
+	@media (min-width: 768px) {
+		h2 {
+			font-size: 5rem;
+		}
+		.serviceTitle {
+			font-size: 3.8rem;
+		}
+
+		.projectTitle {
+			font-size: 3rem;
+		}
+
+		.projectDes {
+			font-size: 1.6rem;
+		}
+	}
+
+	/* Large devices (desktops, 992px and up) */
+	@media (min-width: 992px) {
+		h2 {
+			font-size: 6.5rem;
+		}
+		.serviceTitle {
+			font-size: 5rem;
+		}
+
+		.projectTitle {
+			font-size: 4rem;
+		}
+
+		.projectDes {
+			font-size: 1.6rem;
+		}
+
+		.services {
+			margin: 6rem 0 6rem 0;
+		}
+
+		.projectTag {
+			font-size: 1.4rem;
+		}
+
+		.project {
+			margin: 6rem 0 6rem 0;
+		}
+
+		.projectDes p {
+			max-width: 60%;
+		}
+	}
+
+	/* Extra large devices (large desktops, 1200px and up) */
+	@media (min-width: 1200px) {
+	}
 </style>
