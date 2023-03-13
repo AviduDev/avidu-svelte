@@ -306,5 +306,32 @@
 
 	/* Extra large devices (large desktops, 1200px and up) */
 	@media (min-width: 1200px) {
+		h2 {
+			font-size: 10rem;
+		}
+
+		.project {
+		margin: 8rem 0 8rem 0;
+	}
+
+		.serviceTitle {
+			font-size: 7rem;
+		}
+
+		.projectContainer {
+			margin: 10rem 0 10rem 0;
+		}
+
+		.projectTitle {
+			font-size: 4rem;
+		}
+
+		.projectDes p {
+			max-width: 40%;
+		}
+
+		.serviceItem {
+		margin: 4rem;
+	}
 	}
 </style>

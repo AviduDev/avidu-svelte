@@ -61,5 +61,9 @@
 
 	/* Extra large devices (large desktops, 1200px and up) */
 	@media (min-width: 1200px) {
+		.description {
+			margin: 6rem 0 4rem 0;
+			max-width: 30%;
+		}
 	}
 </style>

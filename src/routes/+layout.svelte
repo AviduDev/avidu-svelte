@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>AVIDU<br>©2023</p>
+		<p>AVIDU©2023</p>
 	</footer>
 </div>
 
@@ -28,10 +28,12 @@
 
 
 	footer p {
-		word-break: break-all;
 		/* margin: 2rem 0 2rem 0; */
 		font-weight: bolder;
 		font-size: 10rem;
 		text-align: center;
+	}
+
+	@media (min-width: 1200px) {
 	}
 </style>

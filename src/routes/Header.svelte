@@ -34,7 +34,6 @@
 		bottom: 0.3rem;
 		z-index: 10;
 		border-radius: 0.5rem;
-		min-width: 90%;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -45,6 +44,7 @@
 
 	.link {
 		font-size: 0.9rem;
+		margin: 0 0.5rem 0 0.5rem;
 	}
 
 	/* Small devices (landscape phones, 576px and up) */
@@ -53,4 +53,10 @@
 		font-size: 1.3rem;
 	}
 }
+
+@media (min-width: 992px) {
+		.nav {
+			max-width: fit-content;
+		}
+	}
 </style>

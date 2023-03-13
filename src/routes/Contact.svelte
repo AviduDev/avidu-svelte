@@ -86,5 +86,17 @@
 
 	/* Extra large devices (large desktops, 1200px and up) */
 	@media (min-width: 1200px) {
+		.emailLink {
+			margin: 6rem 0.5rem 6rem 0.5rem;
+			font-size: 6rem;
+		}
+
+		.linkContainer {
+			font-size: 2rem;
+		}
+
+		.linkContainer a {
+			margin: 2rem 0 2rem 0;
+		}
 	}
 </style>

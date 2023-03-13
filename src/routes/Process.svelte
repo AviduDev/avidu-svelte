@@ -156,5 +156,23 @@
 
 	/* Extra large devices (large desktops, 1200px and up) */
 	@media (min-width: 1200px) {
+		.item p {
+			padding: 1rem;
+			font-size: 1.6rem;
+			max-width: 30%;
+		}
+
+		h2 {
+			font-size: 10rem;
+		}
+
+		.title {
+			font-size: 6rem;
+		}
+
+		.item {
+			margin: 8rem 0 8rem 0;
+		}
+
 	}
 </style>

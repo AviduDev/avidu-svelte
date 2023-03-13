@@ -86,5 +86,12 @@
 
 	/* Extra large devices (large desktops, 1200px and up) */
 	@media (min-width: 1200px) {
+        h1 {
+            font-size: 11.8rem;
+        }
+
+        .heroSection {
+        min-height: 150vh;
+    }
 	}
 </style>
