@@ -30,7 +30,7 @@
 	footer p {
 		/* margin: 2rem 0 2rem 0; */
 		font-weight: bolder;
-		font-size: 10rem;
+		font-size: 15vw;
 		text-align: center;
 	}
 

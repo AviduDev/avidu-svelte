@@ -1,7 +1,7 @@
 <script></script>
 
 <section class="heroSection">
-    <h1>website designer / front-end developer</h1>
+    <h1>website designer /<br>front-end developer</h1>
     <div class="socialLinks">
         <a href="https://www.linkedin.com/in/avidu-web-designer-from-sri-lanka/" target="blank">LinkedIn 🡥</a>
         <a href="https://www.behance.net/avidu" target="blank">Behance 🡥</a>

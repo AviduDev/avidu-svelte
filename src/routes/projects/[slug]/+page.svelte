@@ -5,14 +5,15 @@
 
 <section class="project">
 	<div class="projectHeader">
-		<img src={data.project.mainImage.url} alt={data.project.mainImage.id} />
 		<h1 class="projectTitle">{data.project.title}</h1>
 	</div>
 
-	<h3>{data.project.description}</h3>
+	<img src={data.project.mainImage.url} alt={data.project.title} />
+
+	<h3 class="description">{data.project.description}</h3>
 
 	<div class="details">
-		<hr />
+		
 		<li>Type:<span class="bold">{data.project.type}</span></li>
 		<hr />
 		<li>Company:<span class="bold">{data.project.company}</span></li>
@@ -40,26 +41,31 @@
 			<div class="goals item">
 				<h3>Goals</h3>
 				{@html data.project.goals.html}
+				<hr>
 			</div>
 
 			<div class="goals item">
 				<h3>Problems</h3>
 				{@html data.project.problems.html}
+				<hr>
 			</div>
 
 			<div class="goals item">
 				<h3>Solutions</h3>
 				{@html data.project.proposedSolution.html}
+				<hr>
 			</div>
 
 			<div class="goals item">
 				<h3>services</h3>
 				{@html data.project.providedServices.html}
+				<hr>
 			</div>
 
 			<div class="goals item">
 				<h3>Scope</h3>
 				{@html data.project.projectScope.html}
+				<hr>
 			</div>
 			<!-- 
 					{#each project.tags as tag}
@@ -94,14 +100,19 @@
 		min-height: 100vh;
 	}
 
+	.description {
+		margin: 2rem 0 2rem 0;
+	}
+
 	hr {
-		border: solid black 1px;
+		border: solid rgba(0, 0, 0, 0.5) 1px;
 		width: 100%;
 	}
 	.projectTitle {
 		font-size: 3rem;
 	}
 	img {
+		border-radius: 0.5rem;
 		max-width: 100%;
 	}
 
@@ -111,6 +122,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		list-style: none;
+		font-size: 1rem;
 	}
 	.details {
 		display: flex;
@@ -126,6 +138,7 @@
 		flex-direction: column;
 		margin: 1rem;
 		width: 100%;
+		margin: 2rem 0 2rem 0;
 	}
 
 	img {
@@ -133,4 +146,33 @@
 		object-position: center;
 		max-width: 100%;
 	}
+
+
+	h3 {
+		font-size: 1.7rem;
+		font-weight: bold;
+	}
+	/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.projectTitle {
+		font-size: 5rem;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.projectTitle {
+		font-size: 7rem;
+	}
+
+	.item h3 {
+		font-size: 3rem;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
 </style>

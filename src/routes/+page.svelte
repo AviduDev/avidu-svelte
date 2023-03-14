@@ -93,7 +93,7 @@
 			{#each data.projects.slice(0, first) as project}
 				<div class="project" id={project.id}>
 					<div class="imageContainer">
-						<img src={project.mainImage.url} width={project.mainImage.width} alt={project.title} />
+						<img class="projectImage" src={project.mainImage.url} width={project.mainImage.width} alt={project.title} />
 					</div>
 					<div class="details">
 						{#each project.tags as tag}
@@ -163,6 +163,10 @@
 		padding: 0.3rem;
 		border-radius: 0.3rem;
 		margin: 0.5rem 0 0.5rem 0;
+	}
+
+	.projectImage {
+		border-radius: 0.5rem;
 	}
 	.projectDes {
 		width: 90%;

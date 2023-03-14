@@ -53,10 +53,10 @@
 <section>
 	<h1 class="mainTitle">Projects</h1>
 	<div class="projects">
-		{#each data.projects.slice(0, first) as project}
+		{#each data.projects as project}
 			<div class="project" id={project.id}>
 				<div class="imageContainer">
-					<img src={project.mainImage.url} width={project.mainImage.width} alt={project.title} />
+					<img loading="lazy" class="projectImage" src={project.mainImage.url} width={project.mainImage.width} alt={project.title} />
 				</div>
 				<div class="details">
 					{#each project.tags as tag}
@@ -72,7 +72,7 @@
 
 		<!-- -------------------LOADMORE BUTTON-------------------- -->
 
-		<div class="loadmoreContainer">
+		<!-- <div class="loadmoreContainer">
 			{#if first < data.projects.length}
 				<div class="btn">
 					<button on:click={() => (first = first + 3)} class="loadMore" type="button">
@@ -80,7 +80,7 @@
 					</button>
 				</div>
 			{/if}
-		</div>
+		</div> -->
 
 		<!-- ----------------------------------------------------------- -->
 	</div>
@@ -108,7 +108,7 @@
 		cursor: pointer;
 		text-decoration: underline;
 		-webkit-appearance: none;
-    	-webkit-border-radius: 0;
+		-webkit-border-radius: 0;
 		border-radius: 0;
 		appearance: none;
 		color: inherit;
@@ -145,5 +145,69 @@
 		padding: 0.3rem;
 		border-radius: 0.3rem;
 		margin: 0.5rem 0 0.5rem 0;
+	}
+
+	.projectImage {
+		border-radius: 0.5rem;
+	}
+
+	/* Small devices (landscape phones, 576px and up) */
+	@media (min-width: 576px) {
+		.mainTitle {
+			font-size: 5rem;
+		}
+
+		.projectTitle {
+			font-size: 2.5rem;
+		}
+
+		.details {
+			font-size: 1.2rem;
+		}
+	}
+
+	/* Medium devices (tablets, 768px and up) */
+	@media (min-width: 768px) {
+		.mainTitle {
+			font-size: 7rem;
+		}
+
+		.projectTitle {
+			font-size: 3rem;
+		}
+
+		.details {
+			font-size: 1.2rem;
+		}
+	}
+
+	/* Large devices (desktops, 992px and up) */
+	@media (min-width: 992px) {
+		.mainTitle {
+			font-size: 8rem;
+		}
+
+		.projectTitle {
+			font-size: 4rem;
+		}
+
+		.details {
+			font-size: 1.4rem;
+		}
+	}
+
+	/* Extra large devices (large desktops, 1200px and up) */
+	@media (min-width: 1200px) {
+		.mainTitle {
+			font-size: 11.8rem;
+		}
+
+		.projectTitle {
+			font-size: 4rem;
+		}
+
+		.details {
+			font-size: 1.4rem;
+		}
 	}
 </style>
