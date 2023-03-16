@@ -13,7 +13,8 @@
 	<h3 class="description">{data.project.description}</h3>
 
 	<div class="details">
-		
+	<div class="listContainer">
+			
 		<li>Type:<span class="bold">{data.project.type}</span></li>
 		<hr />
 		<li>Company:<span class="bold">{data.project.company}</span></li>
@@ -36,37 +37,58 @@
 			Live Site:<span class="bold"><a href={data.project.liveSite} target="blank">Open</a></span>
 		</li>
 		<hr />
+	</div>
 
 		<div class="itemContainer">
 			<div class="goals item">
 				<h3>Goals</h3>
-				{@html data.project.goals.html}
-				<hr>
+				<div class="data">
+					{@html data.project.goals.html}
+				</div>
+				
 			</div>
+
+			<hr>
 
 			<div class="goals item">
 				<h3>Problems</h3>
-				{@html data.project.problems.html}
-				<hr>
+				<div class="data">
+					{@html data.project.problems.html}
+				</div>
+				
 			</div>
+
+			<hr>
 
 			<div class="goals item">
 				<h3>Solutions</h3>
-				{@html data.project.proposedSolution.html}
-				<hr>
+				<div class="data">
+					{@html data.project.proposedSolution.html}
+				</div>
+				
 			</div>
+
+			<hr>
 
 			<div class="goals item">
 				<h3>services</h3>
-				{@html data.project.providedServices.html}
-				<hr>
+				<div class="data">
+					{@html data.project.providedServices.html}
+				</div>
+				
 			</div>
+
+			<hr>
 
 			<div class="goals item">
 				<h3>Scope</h3>
-				{@html data.project.projectScope.html}
-				<hr>
+				<div class="data">
+					{@html data.project.projectScope.html}
+				</div>
+				
 			</div>
+
+			<hr>
 			<!-- 
 					{#each project.tags as tag}
 						<p class="projectTag">{tag}</p>
@@ -97,7 +119,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		min-height: 100vh;
+		min-height: 90vh;
 	}
 
 	.description {
@@ -124,6 +146,13 @@
 		list-style: none;
 		font-size: 1rem;
 	}
+	.listContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
 	.details {
 		display: flex;
 		flex-direction: column;
@@ -136,10 +165,18 @@
 	.item {
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		margin: 1rem;
 		width: 100%;
 		margin: 2rem 0 2rem 0;
 	}
+
+	/* .data {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		text-align: justify;
+	} */
 
 	img {
 		object-fit: cover;
@@ -168,11 +205,69 @@
 	.item h3 {
 		font-size: 3rem;
 	}
+
+	.item {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 1rem;
+	}
+
+	.data {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		text-align: justify;
+		max-width: 90%;
+	}
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	.projectTitle {
+		font-size: 8rem;
+	}
+
+	.item h3 {
+		font-size: 4rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	li, .data {
+		font-size: 1.4rem;
+	}
+
+	.listContainer {
+		width: 80%;
+	}
+
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+	.listContainer {
+		margin: 4rem 0 4rem 0;
+	}
+
+	.data {
+		max-width: 70%;
+	}
+
+	.projectTitle {
+		font-size: 10rem;
+	}
+
+	.item h3 {
+		font-size: 4rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+}
 </style>

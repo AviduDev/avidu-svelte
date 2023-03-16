@@ -87,6 +87,12 @@
 </section>
 
 <style>
+
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	h1 {
 		text-align: center;
 	}
@@ -94,6 +100,7 @@
 	.healine {
 		text-align: justify;
 		margin: 1rem 0 2rem 0;
+		max-width: 900px;
 	}
 	hr {
 		border: solid 1px black;
@@ -107,15 +114,36 @@
 		margin: 1rem 0 0 0;
 	}
 
+	.faqs {
+		max-width: 800px;
+		margin: 4rem 0 4rem 0;
+	}
+
 	/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+	h1 {
+		font-size: 5rem;
+	}
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	h1 {
+		font-size: 7rem;
+	}
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	h1 {
+		font-size: 8rem;
+	}
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 11rem;
+	}
+}
 </style>

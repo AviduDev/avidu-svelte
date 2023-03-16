@@ -77,7 +77,7 @@
 	</div>
 	<div class="content">
 		{#each data.bios as bio}
-			<ul id={bio.id}>
+			<ul class="bio" id={bio.id}>
 				<li class="item">
 					<p><span><b>Full Name:</b></span> <span itemprop="name">{bio.fullName}</span></p>
 				</li>
@@ -98,28 +98,28 @@
 			<h2 class="title">education</h2>
 			<hr />
 
-			<div>
+			<div class="details">
 				{@html bio.education.html}
 			</div>
 
 			<h2 class="title">experience</h2>
 			<hr />
 
-			<div>
+			<div class="details">
 				{@html bio.experience.html}
 			</div>
 
 			<h2 class="title">vision</h2>
 			<hr />
 
-			<div>
+			<div class="details">
 				{@html bio.vision.html}
 			</div>
 
 			<h2 class="title">values</h2>
 			<hr />
 
-			<div>
+			<div class="details">
 				{@html bio.values.html}
 			</div>
 		{/each}
@@ -159,15 +159,53 @@
 		margin: 4rem 0 2rem 0;
 	}
 
+	.bio {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: start;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	hr {
+		width: 100%;
+	}
+	
 
 	/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+	h1 {
+		font-size: 5rem;
+	}
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	h1 {
+		font-size: 7rem;
+	}
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	h1 {
+		font-size: 8rem;
+	}
+
+	.details {
+		max-width: 75%;
+	}
+
+	.dsc {
+		
+	}
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}

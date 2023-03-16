@@ -40,19 +40,28 @@ export const load = async ({ params }) => {
 			  }
 			  goals {
 				html
+				raw
 			  }
 			  liveSite
 			  problems {
 				html
+				raw
+				markdown
 			  }
 			  projectScope {
 				html
+				raw
+				markdown
 			  }
 			  proposedSolution {
 				html
+				raw
+				markdown
 			  }
 			  providedServices {
 				html
+				raw
+				markdown
 			  }
 			
             }

@@ -51,7 +51,7 @@
 	<h1>Services</h1>
 	<div class="service">
 		{#each data.services as service}
-			<li id={service.id}>
+			<li class="container" id={service.id}>
 				<h2 class="title">{service.serviceTitle}</h2>
 				<div class="content">
 					<p class="except">{service.serviceDescription}</p>
@@ -105,17 +105,85 @@
 		text-decoration: underline;
 	}
 
+	.container {
+		margin: 4rem 0 4rem 0;
+	}
+
+
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 
 	/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+	h1 {
+		font-size: 5rem;
+	}
+	
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	h1 {
+		font-size: 7rem;
+	}
+
+	h2 {
+		font-size: 4rem;
+	}
+	.except {
+		max-width: 70%;
+	}
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	h1 {
+		font-size: 8rem;
+	}
+
+	h2 {
+		font-size: 5rem;
+	}
+
+	.except {
+		max-width: 50%;
+	}
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+	h1 {
+		font-size: 10rem;
+	}
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		max-width: 100%;
+		justify-content: flex-end;
+	}
+
+	.service {
+		max-width: 1200px;
+		
+	}
+
+	.line {
+		display: none;
+	}
+
+	p {
+		font-size: 1.1rem;
+	}
+}
 </style>

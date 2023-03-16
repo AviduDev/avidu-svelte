@@ -33,16 +33,44 @@
 		margin: 4rem 0 0 0;
 	}
 
+	section {
+		max-width: 1200px;
+	}
+
 
 
 	/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+	h1 {
+		font-size: 4.4rem;
+	}
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	h1 {
+		font-size: 6rem;
+	}
+
+	h2 {
+		font-size: 4rem;
+	}
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	h1 {
+		font-size: 7rem;
+	}
+
+	h2 {
+		font-size: 5rem;
+	}
+
+	.description {
+		max-width: 60%;
+	}
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
